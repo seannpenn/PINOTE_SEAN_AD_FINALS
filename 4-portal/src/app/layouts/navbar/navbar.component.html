@@ -1,0 +1,35 @@
+<div class="nav-body">
+    <div class="site-title">
+        <!-- <h3 *ngIf="auth.authenticated">TeachWer</h3> -->
+        <!-- <h3 *ngIf="auth.authenticated" (click)="nav('home')">TeachWer</h3> -->
+        <h3>Airline System</h3>
+
+    </div>
+    <div class="site-links">
+        <h5 class="item" *ngIf="auth.authenticated" (click)="nav('home')">Home</h5>
+        <h5 class="item" *ngIf="auth.authenticated" (click)="nav('profile')">Profile</h5>
+        <h5 class="item" *ngIf="auth.authenticated" (click)="nav('marketplace')">Marketplace</h5>
+    </div>
+    <!-- <div class="site-user">
+
+        <button class="dropbtn"> 
+            <h5>Cart</h5>
+            <h5 *ngIf="auth.authenticated" (click)='logout()'>Logout</h5>
+            <h5 *ngIf="!auth.authenticated" (click)="nav('login')">Login</h5>
+        </button>
+
+        <div class="siteUser-content">
+            <a href="#">Profile</a>
+            <h5 *ngIf="auth.authenticated" (click)='logout()'>Logout</h5>
+            <h5 *ngIf="!auth.authenticated" (click)="nav('login')">Login</h5>
+            <a href="#">Logout</a>
+        </div>
+
+    </div> -->
+    <div class="site-user">
+        <!-- <fa-icon *ngIf="auth.authenticated" name="faIcon" [icon]="faCartArrowDown" (click)="nav('cart')"></fa-icon> -->
+        <!-- <h5 *ngIf="auth.authenticated" (click)='logout()'>Cart</h5> -->
+        <h5 *ngIf="auth.authenticated" (click)='logout()'>Logout</h5>
+        <h5 *ngIf="!auth.authenticated" (click)="nav('login')">Login</h5>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+.main-content {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: hidden;
+    .sidebar-content {
+        width: 200px;
+        // margin-left: 10px;
+        display: grid;
+        grid-auto-flow: column;
+        // box-shadow: 2px 2px;
+    }
+    .body-content {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        display: grid;
+        grid-auto-flow: column;
+        box-shadow: 2px 2px 5px;
+        overflow-x: hidden;
+    }
+}
